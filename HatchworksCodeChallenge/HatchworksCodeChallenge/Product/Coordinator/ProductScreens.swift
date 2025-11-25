@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+enum ProductScreens: Hashable {
+    case productList
+    case productDetail(Int)
+}
