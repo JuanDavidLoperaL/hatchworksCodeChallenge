@@ -48,11 +48,7 @@ HatchworksCodeChallenge is a technical challenge project for an iOS interview. T
 - **Swift / SwiftUI**  
 - **Core Data** for local persistence  
 - **Kingfisher** for image loading and caching  
-- **Unit Tests** for validating screen functionality  
+- **Unit Tests** for validating screen functionality
+- **Swift Concurrency** for threads handling 
 
 ---
-
-## Installation
-1. Clone this repository:  
-```bash
-git clone <REPOSITORY_URL>
