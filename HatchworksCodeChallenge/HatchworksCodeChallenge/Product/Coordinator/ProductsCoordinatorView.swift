@@ -20,7 +20,7 @@ struct ProductsCoordinatorView: View {
                     case .productList:
                         HomeView()
                     case .productDetail(let id):
-                        EmptyView()
+                        ProductDetailView(productId: id)
                     }
                 }
         }

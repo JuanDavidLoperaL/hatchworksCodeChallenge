@@ -22,17 +22,13 @@ struct ProductListView: View {
                     Text(product.title)
                         .font(.headline)
                     Text("Price: $\(product.price, specifier: "%.2f")")
-                        .font(.subheadline)
+                        .infoTextStyle(foregroundColor: .black)
                     if product.discountPercentage > 0 {
                         Text("Disccount: \(product.discountPercentage, specifier: "%.1f")%")
-                            .font(.subheadline)
-                            .foregroundColor(.green)
+                            .infoTextStyle(foregroundColor: .green)
                     }
                     Text("availability: \(product.availabilityStatus)")
-                        .font(.subheadline)
-                        .foregroundColor(
-                            availabilityColor(availabilityStatus: product.availabilityStatus)
-                        )
+                        .infoTextStyle(foregroundColor: availabilityColor(availabilityStatus: product.availabilityStatus))
                 }
             }
             .padding(.vertical, 6)
