@@ -11,7 +11,16 @@ import SwiftUI
 struct HatchworksCodeChallengeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                ProductsCoordinatorView()
+                    .tabItem {
+                        Label("Home", systemImage: "house")
+                    }
+                HistoryCoordinatorView()
+                    .tabItem {
+                        Label("Purchase History", systemImage: "clock.arrow.circlepath")
+                    }
+            }
         }
     }
 }
