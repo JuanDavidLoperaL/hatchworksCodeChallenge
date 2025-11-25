@@ -5,6 +5,8 @@ HatchworksCodeChallenge is a technical challenge project for an iOS interview. T
 ⚠️ **Important:** This project is **not compatible with Xcode 26** because the **Kingfisher** library, used for image handling and caching, is not yet ready for that version. Please use **Xcode 16**.
 
 ---
+## Project Achitecture
+For this project, I selected the MVVM-C architecture, as I’m familiar with it and it provides a clean and scalable structure for small applications.
 
 ## Features
 
@@ -39,6 +41,11 @@ HatchworksCodeChallenge is a technical challenge project for an iOS interview. T
   - Purchase date  
   - Shipping information  
 - Data is loaded from Core Data.  
+
+## Unit test
+I added unit tests for each ViewModel, since that’s where the business logic is located. The unit tests follow the same folder structure as the main project. I tried to cover all the possible cases I could think of.
+I used mock data for the tests, including mock data for the Core Data layer.
+I used native XCTest instead of any third-party frameworks for testing purposes.
 
 ---
 
