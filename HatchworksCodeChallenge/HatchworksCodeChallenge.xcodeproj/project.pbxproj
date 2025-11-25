@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AC5EB4BA2ED550A90062783B /* RequestManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5EB4AF2ED550A90062783B /* RequestManager.framework */; };
+		AC5EB4C42ED550A90062783B /* RequestManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5EB4AF2ED550A90062783B /* RequestManager.framework */; };
+		AC5EB4C52ED550A90062783B /* RequestManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC5EB4AF2ED550A90062783B /* RequestManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AC5EB4D72ED5516E0062783B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AC5EB4D62ED5516E0062783B /* Kingfisher */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		AC5EB4372ED54F5A0062783B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,12 +28,49 @@
 			remoteGlobalIDString = AC5EB4282ED54F590062783B;
 			remoteInfo = HatchworksCodeChallenge;
 		};
+		AC5EB4BB2ED550A90062783B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC5EB4212ED54F590062783B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC5EB4AE2ED550A90062783B;
+			remoteInfo = RequestManager;
+		};
+		AC5EB4BD2ED550A90062783B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC5EB4212ED54F590062783B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC5EB4282ED54F590062783B;
+			remoteInfo = HatchworksCodeChallenge;
+		};
+		AC5EB4C22ED550A90062783B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC5EB4212ED54F590062783B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC5EB4AE2ED550A90062783B;
+			remoteInfo = RequestManager;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AC5EB4C92ED550A90062783B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AC5EB4C52ED550A90062783B /* RequestManager.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AC5EB4292ED54F590062783B /* HatchworksCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HatchworksCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5EB4362ED54F5A0062783B /* HatchworksCodeChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HatchworksCodeChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5EB4402ED54F5A0062783B /* HatchworksCodeChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HatchworksCodeChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC5EB4AF2ED550A90062783B /* RequestManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RequestManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC5EB4B92ED550A90062783B /* RequestManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RequestManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -45,6 +89,16 @@
 			path = HatchworksCodeChallengeUITests;
 			sourceTree = "<group>";
 		};
+		AC5EB4B02ED550A90062783B /* RequestManager */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = RequestManager;
+			sourceTree = "<group>";
+		};
+		AC5EB4BF2ED550A90062783B /* RequestManagerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = RequestManagerTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +106,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC5EB4D72ED5516E0062783B /* Kingfisher in Frameworks */,
+				AC5EB4C42ED550A90062783B /* RequestManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +125,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AC5EB4AC2ED550A90062783B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5EB4B62ED550A90062783B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5EB4BA2ED550A90062783B /* RequestManager.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +149,8 @@
 				AC5EB42B2ED54F590062783B /* HatchworksCodeChallenge */,
 				AC5EB4392ED54F5A0062783B /* HatchworksCodeChallengeTests */,
 				AC5EB4432ED54F5A0062783B /* HatchworksCodeChallengeUITests */,
+				AC5EB4B02ED550A90062783B /* RequestManager */,
+				AC5EB4BF2ED550A90062783B /* RequestManagerTests */,
 				AC5EB42A2ED54F590062783B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,11 +161,23 @@
 				AC5EB4292ED54F590062783B /* HatchworksCodeChallenge.app */,
 				AC5EB4362ED54F5A0062783B /* HatchworksCodeChallengeTests.xctest */,
 				AC5EB4402ED54F5A0062783B /* HatchworksCodeChallengeUITests.xctest */,
+				AC5EB4AF2ED550A90062783B /* RequestManager.framework */,
+				AC5EB4B92ED550A90062783B /* RequestManagerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AC5EB4AA2ED550A90062783B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		AC5EB4282ED54F590062783B /* HatchworksCodeChallenge */ = {
@@ -102,16 +187,19 @@
 				AC5EB4252ED54F590062783B /* Sources */,
 				AC5EB4262ED54F590062783B /* Frameworks */,
 				AC5EB4272ED54F590062783B /* Resources */,
+				AC5EB4C92ED550A90062783B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AC5EB4C32ED550A90062783B /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				AC5EB42B2ED54F590062783B /* HatchworksCodeChallenge */,
 			);
 			name = HatchworksCodeChallenge;
 			packageProductDependencies = (
+				AC5EB4D62ED5516E0062783B /* Kingfisher */,
 			);
 			productName = HatchworksCodeChallenge;
 			productReference = AC5EB4292ED54F590062783B /* HatchworksCodeChallenge.app */;
@@ -163,6 +251,53 @@
 			productReference = AC5EB4402ED54F5A0062783B /* HatchworksCodeChallengeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		AC5EB4AE2ED550A90062783B /* RequestManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC5EB4C62ED550A90062783B /* Build configuration list for PBXNativeTarget "RequestManager" */;
+			buildPhases = (
+				AC5EB4AA2ED550A90062783B /* Headers */,
+				AC5EB4AB2ED550A90062783B /* Sources */,
+				AC5EB4AC2ED550A90062783B /* Frameworks */,
+				AC5EB4AD2ED550A90062783B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				AC5EB4B02ED550A90062783B /* RequestManager */,
+			);
+			name = RequestManager;
+			packageProductDependencies = (
+			);
+			productName = RequestManager;
+			productReference = AC5EB4AF2ED550A90062783B /* RequestManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AC5EB4B82ED550A90062783B /* RequestManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC5EB4CA2ED550A90062783B /* Build configuration list for PBXNativeTarget "RequestManagerTests" */;
+			buildPhases = (
+				AC5EB4B52ED550A90062783B /* Sources */,
+				AC5EB4B62ED550A90062783B /* Frameworks */,
+				AC5EB4B72ED550A90062783B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC5EB4BC2ED550A90062783B /* PBXTargetDependency */,
+				AC5EB4BE2ED550A90062783B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AC5EB4BF2ED550A90062783B /* RequestManagerTests */,
+			);
+			name = RequestManagerTests;
+			packageProductDependencies = (
+			);
+			productName = RequestManagerTests;
+			productReference = AC5EB4B92ED550A90062783B /* RequestManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +319,13 @@
 						CreatedOnToolsVersion = 16.4;
 						TestTargetID = AC5EB4282ED54F590062783B;
 					};
+					AC5EB4AE2ED550A90062783B = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					AC5EB4B82ED550A90062783B = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = AC5EB4282ED54F590062783B;
+					};
 				};
 			};
 			buildConfigurationList = AC5EB4242ED54F590062783B /* Build configuration list for PBXProject "HatchworksCodeChallenge" */;
@@ -195,6 +337,9 @@
 			);
 			mainGroup = AC5EB4202ED54F590062783B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AC5EB4D52ED5516E0062783B /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AC5EB42A2ED54F590062783B /* Products */;
 			projectDirPath = "";
@@ -203,6 +348,8 @@
 				AC5EB4282ED54F590062783B /* HatchworksCodeChallenge */,
 				AC5EB4352ED54F5A0062783B /* HatchworksCodeChallengeTests */,
 				AC5EB43F2ED54F5A0062783B /* HatchworksCodeChallengeUITests */,
+				AC5EB4AE2ED550A90062783B /* RequestManager */,
+				AC5EB4B82ED550A90062783B /* RequestManagerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +370,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AC5EB43E2ED54F5A0062783B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5EB4AD2ED550A90062783B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5EB4B72ED550A90062783B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +414,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AC5EB4AB2ED550A90062783B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5EB4B52ED550A90062783B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +440,21 @@
 			isa = PBXTargetDependency;
 			target = AC5EB4282ED54F590062783B /* HatchworksCodeChallenge */;
 			targetProxy = AC5EB4412ED54F5A0062783B /* PBXContainerItemProxy */;
+		};
+		AC5EB4BC2ED550A90062783B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC5EB4AE2ED550A90062783B /* RequestManager */;
+			targetProxy = AC5EB4BB2ED550A90062783B /* PBXContainerItemProxy */;
+		};
+		AC5EB4BE2ED550A90062783B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC5EB4282ED54F590062783B /* HatchworksCodeChallenge */;
+			targetProxy = AC5EB4BD2ED550A90062783B /* PBXContainerItemProxy */;
+		};
+		AC5EB4C32ED550A90062783B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC5EB4AE2ED550A90062783B /* RequestManager */;
+			targetProxy = AC5EB4C22ED550A90062783B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -510,6 +700,106 @@
 			};
 			name = Release;
 		};
+		AC5EB4C72ED550A90062783B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juandavid.RequestManager;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AC5EB4C82ED550A90062783B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juandavid.RequestManager;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AC5EB4CB2ED550A90062783B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juandavid.RequestManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HatchworksCodeChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HatchworksCodeChallenge";
+			};
+			name = Debug;
+		};
+		AC5EB4CC2ED550A90062783B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juandavid.RequestManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HatchworksCodeChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HatchworksCodeChallenge";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -549,7 +839,44 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		AC5EB4C62ED550A90062783B /* Build configuration list for PBXNativeTarget "RequestManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC5EB4C72ED550A90062783B /* Debug */,
+				AC5EB4C82ED550A90062783B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC5EB4CA2ED550A90062783B /* Build configuration list for PBXNativeTarget "RequestManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC5EB4CB2ED550A90062783B /* Debug */,
+				AC5EB4CC2ED550A90062783B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC5EB4D52ED5516E0062783B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.6.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC5EB4D62ED5516E0062783B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC5EB4D52ED5516E0062783B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC5EB4212ED54F590062783B /* Project object */;
 }
