@@ -11,7 +11,11 @@ struct ProductDetailView: View {
     
     // MARK: - State
     @State private var showConfirmPurchase = false
+    @State private var showSuccessAlert = false
+    @State private var showErrorAlert = false
+    @State private var loadingPurchase: Bool = false
     @State var viewModel: ProductDetailViewModel
+    @Environment(ProductsCoordinatorLogic.self) var coordinator
     
     // MARK: - Init
     init(productId: Int) {
@@ -20,25 +24,57 @@ struct ProductDetailView: View {
     
     // MARK: - Body
     var body: some View {
-        VStack {
-            switch viewModel.viewState {
-            case .loading:
-                ProgressView("Loading product...")
-            case .error(let error):
-                Text("Error:\n\(error)")
-                    .errorTextStyle()
-            case .loaded(let product):
-                productDetailContent(product)
+        ZStack {
+            VStack {
+                switch viewModel.viewState {
+                case .loading:
+                    ProgressView("Loading product...")
+                case .error(let error):
+                    Text("Error:\n\(error)")
+                        .errorTextStyle()
+                case .loaded(let product):
+                    productDetailContent(product)
+                }
+            }
+            if loadingPurchase {
+                Color.black.opacity(0.4)
+                    .ignoresSafeArea()
+                ProgressView("Processing...")
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(10)
+                    .shadow(radius: 10)
             }
         }
         .task { await viewModel.getProductDetail() }
         .alert("Confirm purchase", isPresented: $showConfirmPurchase) {
             Button("Confirm", role: .destructive) {
-                print("Purchase confirmed")
+                Task {
+                    loadingPurchase = true
+                    let success = await viewModel.addProductToHistory()
+                    loadingPurchase = false
+                    if success {
+                        showSuccessAlert = true
+                        showErrorAlert = false
+                    } else {
+                        showSuccessAlert = false
+                        showErrorAlert = true
+                    }
+                }
             }
             Button("Cancel", role: .cancel) {}
         } message: {
             Text("¿Do you want to buy this product?")
+        }
+        .alert("Purchase completed successfully", isPresented: $showSuccessAlert) {
+            Button("OK", role: .cancel) {
+                coordinator.path.removeLast()
+            }
+        }
+        .alert("Purhase failed", isPresented: $showErrorAlert) {
+            Button("OK", role: .cancel) {}
+        } message: {
+            Text("Something happen wrong. Try again later.")
         }
     }
 }
