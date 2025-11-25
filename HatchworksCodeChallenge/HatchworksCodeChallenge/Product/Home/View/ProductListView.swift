@@ -36,9 +36,9 @@ struct ProductListView: View {
                 }
             }
             .padding(.vertical, 6)
-//            .onTapGesture {
-//                coordinator.path.append(ProductsScreen.productDetail(product.id))
-//            }
+            .onTapGesture {
+                coordinator.path.append(ProductScreens.productDetail(product.id))
+            }
             .onAppear {
                 if product.id == products.last?.id {
                     loadNextPage()
