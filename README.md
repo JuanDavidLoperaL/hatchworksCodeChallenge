@@ -1,5 +1,3 @@
-# hatchworksCodeChallenge
-
 # HatchworksCodeChallenge
 
 HatchworksCodeChallenge is a technical challenge project for an iOS interview. The app simulates a small store that consumes the free [DummyJSON API](https://dummyjson.com/products) to display products and manage purchases, with local persistence using Core Data.
