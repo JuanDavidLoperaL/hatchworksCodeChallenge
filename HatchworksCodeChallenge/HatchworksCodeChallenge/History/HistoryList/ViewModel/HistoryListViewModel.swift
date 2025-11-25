@@ -12,9 +12,14 @@ import Observation
 final class HistoryListViewModel {
     
     private(set) var purchaseHistory: [Purchases] = []
+    private let coreData: CoreDataManagerProtocol
+    
+    init(coreData: CoreDataManagerProtocol = CoreDataManager.shared) {
+        self.coreData = coreData
+    }
     
     func refresh() {
-        let context = CoreDataManager.shared.context
-        purchaseHistory = CoreDataManager.shared.fetchPurchases(context: context)
+        let context = coreData.context
+        purchaseHistory = coreData.fetchPurchases(context: context)
     }
 }
