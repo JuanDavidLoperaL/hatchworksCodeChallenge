@@ -7,7 +7,13 @@
 
 import CoreData
 
-final class CoreDataManager {
+protocol CoreDataManagerProtocol {
+    var context: NSManagedObjectContext { get }
+    func fetchPurchases(context: NSManagedObjectContext) -> [Purchases]
+    func saveContext(selectedContext: NSManagedObjectContext) throws
+}
+
+final class CoreDataManager: CoreDataManagerProtocol {
     static let shared = CoreDataManager()
     
     private let container: NSPersistentContainer
